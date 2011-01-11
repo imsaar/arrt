@@ -29,5 +29,5 @@ generate scaffold candidate first_name:string middle_name:string  last_name:stri
 
 generate scaffold requisition job_title:string requirements:text location:string manager_id:integer
 
-generate scaffold employee first_name:string last_name:string middle_name:string email:string login:string role:string
+generate scaffold employee first_name:string middle_name:string last_name:string  email:string login:string role:string
 
