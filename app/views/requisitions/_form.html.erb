@@ -24,8 +24,8 @@
     <%= f.text_field :location %>
   </div>
   <div class="field">
-    <%= f.label :manager_id %><br />
-    <%= f.text_field :manager_id %>
+    <%= f.label :manager %><br />    
+    <%= collection_select(:requisition, :manager_id, Employee.all, :id, :name)%>
   </div>
   <div class="actions">
     <%= f.submit %>

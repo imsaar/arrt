@@ -16,7 +16,7 @@
     <td><%= requisition.job_title %></td>
     <td><%= requisition.requirements %></td>
     <td><%= requisition.location %></td>
-    <td><%= requisition.manager_id %></td>
+    <td><%= requisition.manager.name %></td>
     <td><%= link_to 'Show', requisition %></td>
     <td><%= link_to 'Edit', edit_requisition_path(requisition) %></td>
     <td><%= link_to 'Destroy', requisition, :confirm => 'Are you sure?', :method => :delete %></td>
