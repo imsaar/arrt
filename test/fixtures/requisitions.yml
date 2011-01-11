@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  job_title: MyString
+  requirements: MyText
+  location: MyString
+  manager_id: 1
+
+two:
+  job_title: MyString
+  requirements: MyText
+  location: MyString
+  manager_id: 1

@@ -1,0 +1,33 @@
+<%= form_for(@requisition) do |f| %>
+  <% if @requisition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@requisition.errors.count, "error") %> prohibited this requisition from being saved:</h2>
+
+      <ul>
+      <% @requisition.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :job_title %><br />
+    <%= f.text_field :job_title %>
+  </div>
+  <div class="field">
+    <%= f.label :requirements %><br />
+    <%= f.text_area :requirements %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :manager_id %><br />
+    <%= f.text_field :manager_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

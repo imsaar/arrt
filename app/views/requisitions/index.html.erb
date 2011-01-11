@@ -1,0 +1,29 @@
+<h1>Listing requisitions</h1>
+
+<table>
+  <tr>
+    <th>Job title</th>
+    <th>Requirements</th>
+    <th>Location</th>
+    <th>Manager</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requisitions.each do |requisition| %>
+  <tr>
+    <td><%= requisition.job_title %></td>
+    <td><%= requisition.requirements %></td>
+    <td><%= requisition.location %></td>
+    <td><%= requisition.manager_id %></td>
+    <td><%= link_to 'Show', requisition %></td>
+    <td><%= link_to 'Edit', edit_requisition_path(requisition) %></td>
+    <td><%= link_to 'Destroy', requisition, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Requisition', new_requisition_path %>
